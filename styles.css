@@ -1,7 +1,9 @@
-body {
+body{
+    padding: 0;
+    margin: 0px;
+    box-sizing: border-box;
     background-color: powderblue;
 }
-
 
 .t1 p, .t2 p{
     width: 40%;
@@ -54,32 +56,21 @@ th ,td{
 .t1 tr:nth-child(even) {
     background-color: darkgrey;
 }
-
-.menu ul {
-    
+.menu ul{
     display: flex;
-    flex-wrap: wrap;
-    width: auto;
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
-    overflow: hidden;
     background-color: #333333;
-    
-    
+    list-style-type: none;
+    padding: 0%;
+    margin: 0%;
+    flex-wrap: nowrap; 
 }
-
-.menu li {
-    float: left;
-}
-
-.menu li a {
+.menu li a{
     display: block;
+    text-decoration: none;
     color: white;
     text-align: center;
     padding: 16px;
-    text-decoration: none;
 }
-.menu li a:hover {
+.menu li a:hover{
     background-color: #111111;
-  }
+}
