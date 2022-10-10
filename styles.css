@@ -1,3 +1,4 @@
+html,
 body {
     margin: 0%;
     padding: 0%;
@@ -7,19 +8,18 @@ body {
 .abaixo{
     text-align: center;
     font-size: large;
-    padding-top: 0;
-    margin: 0;
+    gap: 0px 0px;
 }
 .sobre {
     border-style: solid;
-    align-content: center;
     display: grid;
-    grid-template-columns:50% auto;
-    grid-template-rows: auto auto auto auto;
-    gap: 2px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "p1 p2"
+    "p3 p3"
+    ". p4";
     
-    padding: 0px;
-    row-gap: 0px;
     
     font-size: large;
 
@@ -27,13 +27,19 @@ body {
 .sobre  p{
     border-style: dotted;
     text-align: center;
-    padding: 20px;
+    
+}
+.p1{
+    grid-area: p1;
+}
+.p2{
+    grid-area: p2;
 }
 .p3 {
-    grid-column: 1 / span 2;
+    grid-area: p3;
 }
 .p4{
-    grid-column: 2 / span 1;
+    grid-area: p4;
 }
 
 .t1 p,
@@ -94,9 +100,15 @@ div.t1 td {
     background-color: darkgrey;
 }
 
+header{
+    
+}
 header ul {
+    
     display: grid;
-    grid-template-columns: auto auto auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: max-content;
+    
     background-color: #333333;
     list-style-type: none;
     padding: 0%;
