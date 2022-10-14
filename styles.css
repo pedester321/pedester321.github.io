@@ -100,14 +100,12 @@ div.t1 td {
     background-color: darkgrey;
 }
 
-header{
-    
-}
+
 header ul {
     
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: max-content;
+    display: flex;
+   
+        
     
     background-color: #333333;
     list-style-type: none;
